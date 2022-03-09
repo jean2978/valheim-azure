@@ -28,7 +28,7 @@ resource "azurerm_storage_account" "storage" {
 }
 
 resource "azurerm_container_group" "container" {
-  location            = var.locaion
+  location            = var.location
   name                = "valheimserver"
   os_type             = "Linux"
   resource_group_name = var.resource_group_name
